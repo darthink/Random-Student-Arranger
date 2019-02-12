@@ -1,0 +1,86 @@
+body{
+	background: #16161d;
+}
+
+.title {
+	background: #A8A7E8;
+	width: 250px;
+	margin: 10px auto;
+	padding: 10px;
+	color: #16161d;
+	text-align: center;
+	font-family: Helvetica, Verdana, sans-serif;
+	border: 10px solid #B7C9FF;
+}
+
+.groupContainer {
+	width: 600px;
+	margin: 0 auto;
+	/*border-top: 1px solid #B7C9FF;
+    border-bottom: 1px solid #B7C9FF;*/
+    
+
+}
+
+.groupContainer:before, 
+.groupContainer:after {
+    content: "";
+    height: 1px;
+    background: -moz-linear-gradient(left,  rgba(183,201,255,0) 0%, rgba(183,201,255,1) 50%, rgba(183,201,255,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(183,201,255,0)), color-stop(50%,rgba(183,201,255,1)), color-stop(100%,rgba(183,201,255,0)));
+    background: -webkit-linear-gradient(left,  rgba(183,201,255,0) 0%,rgba(183,201,255,1) 50%,rgba(183,201,255,0) 100%);
+    background: -o-linear-gradient(left,  rgba(183,201,255,0) 0%,rgba(183,201,255,1) 50%,rgba(183,201,255,0) 100%);
+    background: -ms-linear-gradient(left,  rgba(183,201,255,0) 0%,rgba(183,201,255,1) 50%,rgba(183,201,255,0) 100%);
+    background: linear-gradient(to right,  rgba(183,201,255,0) 0%,rgba(183,201,255,1) 50%,rgba(183,201,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+    display: block;
+}
+
+.groupBox {
+	background: #A8A7E8;
+	float: left;
+	width: 250px;
+	margin: 10px 5px;
+	padding: 10px;
+	color: #16161d;
+	font-family: Helvetica, Verdana, sans-serif;
+	border: 10px solid #B7C9FF;
+}
+
+.groupBox h3 {
+	text-align: center;
+}
+
+.group {
+	float: left;
+	width: 220px;
+	min-height: 40px;
+	margin: 2px 0;
+	padding: 7px 0;
+	border-bottom: 2px solid #16161d;
+}
+
+.groupNumber {
+	float: left;
+	min-height: 40px;
+	line-height: 40px;
+	width: 30px;
+	margin: 2px 0;
+	padding: 7px 0;
+	border-bottom: 2px solid #16161d;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
